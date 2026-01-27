@@ -1,0 +1,11 @@
+# Day 10 Cron Jobs
+# run crontab -e and add these two lines
+# crontab -l will list the cron jobs
+# check ssh_alert.log and memmory_alert.log to verify
+
+# SSH alert every 5 minutes
+*/5 * * * * /path/to/ssh_alert.sh >> /tmp/ssh_alert.log 2>&1
+
+# Memory alert every 10 minutes
+*/10 * * * * /path/to/memory_alert.sh >> /tmp/memory_alert.log 2>&1
+
