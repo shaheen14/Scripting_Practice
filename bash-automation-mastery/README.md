@@ -1,6 +1,3 @@
-
-### 📌 `README.md`
-```md
 # Bash Automation Mastery – 12 Days Hands-On Project
 
 ## Overview

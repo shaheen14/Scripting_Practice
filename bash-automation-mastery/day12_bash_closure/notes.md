@@ -42,8 +42,8 @@ At least one check (`-d`, `-m`, or `-s`) must be selected, otherwise the script 
 -D   Set disk usage threshold (percentage)
 -M   Set memory usage threshold (percentage)
 -S   Set SSH failure threshold (count)
-
 ```
+---
 ## Argument Parsing
 
 The script uses getopts to parse arguments:
@@ -52,6 +52,7 @@ while getopts "dmsD:M:S:" opt; do
 
 
 Each option updates internal flags or threshold variables.
+---
 
 ## Logging
 
@@ -66,47 +67,48 @@ Logs are written to:
 
 /tmp/sys_monitor.log
 
+---
 ## Disk Usage Check
 
-Uses df -P to get disk usage
+- Uses df -P to get disk usage
 
-Extracts usage percentage
+- Extracts usage percentage
 
-Compares against DISK_THRESHOLD
+- Compares against DISK_THRESHOLD
 
-Logs OK or WARNING per filesystem
-
+- Logs OK or WARNING per filesystem
+---
 ## Memory Usage Check
 
-Uses free -m
+- Uses free -m
 
-Calculates memory usage percentage
+- Calculates memory usage percentage
 
-Compares against MEM_THRESHOLD
+- Compares against MEM_THRESHOLD
 
-Logs normal or alert status
-
+- Logs normal or alert status
+---
 ## SSH Failure Check
 
-Uses journalctl for ssh and sshd
+- Uses journalctl for ssh and sshd
 
-Filters failed login attempts from the last 1 hour
+- Filters failed login attempts from the last 1 hour
 
-Compares count against SSH_THRESHOLD
+- Compares count against SSH_THRESHOLD
 
-Logs alert or normal status
-
+- Logs alert or normal status
+---
 ## Conditional Execution
 
-Checks are executed only if explicitly enabled:
+  Checks are executed only if explicitly enabled:
 
-$CHECK_DISK && check_disk
-$CHECK_MEM && check_mem
-$CHECK_SSH && check_ssh
-
+- $CHECK_DISK && check_disk
+- $CHECK_MEM && check_mem
+- $CHECK_SSH && check_ssh
+---
 ## Example Usage
-./system_health_user_input.sh -d
-./system_health_user_input.sh -m -M 80
-./system_health_user_input.sh -d -m -s
-./system_health_user_input.sh -s -S 10
-
+- ./system_health_user_input.sh -d
+- ./system_health_user_input.sh -m -M 80
+- ./system_health_user_input.sh -d -m -s
+- ./system_health_user_input.sh -s -S 10
+---
