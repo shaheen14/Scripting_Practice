@@ -48,26 +48,26 @@ At least one check (`-d`, `-m`, or `-s`) must be selected, otherwise the script 
 
 The script uses getopts to parse arguments:
 
-while getopts "dmsD:M:S:" opt; do
+- while getopts "dmsD:M:S:" opt; do
 
+- Each option updates internal flags or threshold variables.
 
-Each option updates internal flags or threshold variables.
 ---
 
 ## Logging
 
 All output is logged with timestamps using a common logging function:
 
-log() {
+- log() {
   echo "$(date '+%F %T') - $1" | tee -a "$LOGFILE"
-}
-
+        }
 
 Logs are written to:
 
-/tmp/sys_monitor.log
+- /tmp/sys_monitor.log
 
 ---
+
 ## Disk Usage Check
 
 - Uses df -P to get disk usage
