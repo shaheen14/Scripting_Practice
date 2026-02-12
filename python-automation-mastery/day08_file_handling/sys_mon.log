@@ -1,0 +1,8 @@
+2026-02-12 22:36:45 - CRITICAL Disk usage is 90
+2026-02-12 22:36:45 - NORMAL Memory usage is 60
+2026-02-12 22:36:45 - CRITICAL ssh_failures usage is 5
+2026-02-12 22:44:14 - System Health Check Started
+2026-02-12 22:44:14 - CRITICAL disk usage is 90
+2026-02-12 22:44:14 - NORMAL memory usage is 60
+2026-02-12 22:44:14 - CRITICAL ssh_failures usage is 5
+2026-02-12 22:44:14 - System Health Check Completed
