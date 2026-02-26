@@ -1,20 +1,45 @@
-# Bash Scripting – 7 Day Learning Project
+# Linux Automation Journey – Bash to Python
 
-This repository contains my 7-day Bash scripting practice.
-The goal is to build strong Linux automation skills by solving real
-system administration problems using Bash.
+This repository documents my structured learning journey in Linux automation — starting with Bash scripting fundamentals, advancing into more structured Bash automation, and progressing into Python-based system automation.
 
-## Topics Covered
-- Variables and basic commands
-- Conditional logic
-- Loops
-- Command-line arguments
-- Functions
-- Logging and file handling
-- System health automation
+The goal has been simple: build strong, practical automation skills by solving real system-level problems.
 
-## How to Run
-Make script executable:
+---
+
+## What I Practiced
+
+### Bash Scripting Foundations
+- Variables and basic commands  
+- Conditional logic  
+- Loops  
+- Command-line arguments  
+- Functions  
+- Logging and file handling  
+- Basic system health automation  
+
+### Advanced Bash Scripting
+- Argument validation  
+- Modular scripting structure  
+- Log processing  
+- Error handling  
+- System monitoring scripts  
+- Production-style automation practices  
+
+### Python Automation Mastery
+- File and directory automation  
+- Log parsing  
+- `subprocess` for executing Linux commands  
+- `argparse` for CLI development  
+- Modular project structure  
+- Building a CLI-based Unified System Monitor  
+- Threshold-based alerts and logging  
+
+---
+
+## How to Run Bash Scripts
+
+Make the script executable:
+
 ```bash
 chmod +x script_name.sh
 ./script_name.sh
